@@ -4,7 +4,7 @@
 ![download (4)](https://github.com/Dhruv501/Zopsmart-mini-Project/assets/75206417/034c767c-b98b-4cd1-a6fa-e60524a0cb15)
 
 
-A powerful API for managing books with CRUD operations and MySQL database integration.
+A Simple API for managing books with CRUD operations and MySQL database integration.
 
 ---
 
