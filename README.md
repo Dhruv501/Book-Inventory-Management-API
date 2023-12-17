@@ -41,8 +41,6 @@ To install the dependencies, run the following command:
 
 ```bash
 go get ./...
-# Run MySQL Docker container
-docker run --name gofr-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=test_db -p 3306:3306 -d mysql:8.0.30
 # to run the server
 go run main.go 
 ```
@@ -106,6 +104,36 @@ Send a `DELETE` request to the `/books/{id}` endpoint to delete a specific book
 2. Set the request type to `POST`.
 3. Enter the URL: `http://localhost:8000/books/1`(replace `1`with the actual book ID).
 4. Click "Send" to delete the book.
+
+## Database Integration
+
+The Gofr Book Inventory API is seamlessly integrated with a MySQL database for efficient data persistence. Follow the steps below to set up and interact with the database.
+
+### MySQL Database Configuration
+
+1. Ensure you have Docker installed on your machine.
+
+2. Run the following command to start a MySQL Docker container:
+
+   ```bash
+   docker run --name gofr-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=test_db -p 3306:3306 -d mysql:8.0.30
+   # To create the necessary table for storing books, execute the following command:  
+   docker exec -it gofr-mysql mysql -uroot -proot123 test_db -e "CREATE TABLE books (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255) NOT NULL, author VARCHAR(255), genre VARCHAR(255), date DATE, price INT,    description TEXT);"
+
+### Database Schema
+
+The database schema includes a table named `books` with the following columns:
+
+- **id:** Integer, Auto-incremented primary key.
+- **title:** String, Not null.
+- **author:** String.
+- **genre:** String.
+- **date:** Date.
+- **price:** Integer.
+- **description:** Text.
+
+## Unit Testing
+
 
 
 
