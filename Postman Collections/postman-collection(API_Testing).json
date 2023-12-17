@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "f998a9da-2b79-4c2f-bda8-2b71fa374c9a",
+		"name": "Book-Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "c4422ad4-76ef-4d69-a3ec-6a77ac6783e7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "4a48ab39-c087-4b80-a785-3a0ed601e954",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Cloud Atlas\",\r\n  \"author\": \"David Mitchell\",\r\n  \"genre\": \"Historical Fiction, Fiction\",\r\n  \"data\": \"Six interconnected stories spanning centuries explore themes of reincarnation, karma, and the interconnectedness of human lives.\",\r\n  \"price\": 17.99,\r\n  \"description\": \"Ambitious and thought-provoking journey through time and space.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "a053f993-17de-4f5b-8e39-87411b948ced",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Cloud Atlas\",\r\n  \"author\": \"David Mitchell\",\r\n  \"genre\": \"Historical Fiction, Fiction\",\r\n  \"data\": \"\",\r\n  \"price\": 17.99,\r\n  \"description\": \"Ambitious and thought-provoking journey through time and space.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/books/7"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/books/7",
+			"id": "6eedc163-928a-44fb-b0c1-0107ba1a248e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/books/7"
+			},
+			"response": []
+		}
+	]
+}
