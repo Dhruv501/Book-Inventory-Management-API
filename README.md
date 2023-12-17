@@ -1,7 +1,7 @@
 # Zopsmart-mini-Project
 # Gofr Book Inventory API
 
-[Include a logo or banner image if you have one]
+[Include a logo or banner image if you have one
 
 A powerful API for managing books with CRUD operations and MySQL database integration.
 
@@ -136,5 +136,7 @@ The database schema includes a table named `books` with the following columns:
 ![Screenshot 2023-12-18 030359](https://github.com/Dhruv501/Zopsmart-mini-Project/assets/75206417/c8b32720-1e77-4dfc-ac24-11d95b454c95)
 
 ## Postman Collection
-
+![Screenshot 2023-12-18 013533](https://github.com/Dhruv501/Zopsmart-mini-Project/assets/75206417/011ddfc6-6def-4e3e-abf9-6bd7598be439)
+![Screenshot 2023-12-18 013523](https://github.com/Dhruv501/Zopsmart-mini-Project/assets/75206417/86110e2a-5a5c-4f44-889c-24ac600fade7)
+![Screenshot 2023-12-18 013508](https://github.com/Dhruv501/Zopsmart-mini-Project/assets/75206417/5cb99399-afa5-4680-8871-fb3f4ceadef5)
 
